@@ -39,6 +39,10 @@ bool pwd_strong(string& text){
 
         if (isSpecial(text[i]))
             hasChar = true;
+            
+        if (hasLow && hasUp && hasNum && hasChar){
+            break;
+        }
     }
     
     if(p_len >= 12 && hasLow && hasUp && hasNum && hasChar){
